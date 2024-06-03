@@ -8,7 +8,8 @@ import {
 } from "react";
 
 // 定義基礎 URL
-const BASE_URL = "http://localhost:9000";
+// const BASE_URL = "http://localhost:9000";
+const BASE_URL = "/.netlify/functions/cities"
 
 
 
