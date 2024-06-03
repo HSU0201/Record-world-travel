@@ -1,0 +1,24 @@
+# netlify.toml
+
+# 構建設置
+[build]
+  command = "npm run build"
+  publish = "dist" # Vite 的默認輸出目錄
+
+# 環境變量設置
+[build.environment]
+  PORT = "9000"
+
+# 部署設置
+[dev]
+  command = "npm run server" # 在本地運行json-server
+  targetPort = 9000 # json-server 使用的端口
+
+[functions]
+  directory = "netlify/functions" # 如果你有Netlify函數，指定函數目錄
+
+# 路由設置
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
