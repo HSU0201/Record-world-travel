@@ -9,7 +9,7 @@ import {
 
 // 定義基礎 URL
 // const BASE_URL = "http://localhost:9000";
-const BASE_URL = "https://github.com/HSU0201/Record-world-travel/blob/main/data/cities.json";
+const BASE_URL = "/.netlify/functions/get-cities";
 
 // 建立 CitiesContext 以供全域使用
 const CitiesContext = createContext();
