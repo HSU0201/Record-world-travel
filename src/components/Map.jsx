@@ -75,11 +75,11 @@ function Map() {
           </Marker>
         ))}
         {/* ==== */}
-        {geolocationPosition && (
+        {/* {geolocationPosition && (
           <Marker position={[geolocationPosition.lat, geolocationPosition.lng]} icon={myIcon}>
             <Popup>你的位置</Popup>
           </Marker>
-        )}
+        )} */}
         {/* === */}
         <div className="leaflet-bottom leaflet-right">
           <ZoomControl position="bottomright" />
